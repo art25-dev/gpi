@@ -1,0 +1,16 @@
+.gerb {
+  display: block;
+  max-width: 100%;
+  width: 150px;
+  margin: 0 auto;
+
+  @include tablets {
+    width: 120px;
+    margin-bottom: 30px;
+  }
+
+  @include phones {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+}

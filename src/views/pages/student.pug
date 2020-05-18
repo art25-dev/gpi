@@ -1,0 +1,42 @@
+extends ../main.layout.pug
+
+block variables
+  - var title = 'Абитуриентам'
+
+block content
+  .container 
+    h1.title.title--page Абитуриентам
+    .row
+      .col-sm-6
+        a(href="./assets/documents/pr-priema.pdf" target="_blank").card.card--link.card--file
+          p.text.text--link Правила приема
+        a(href="./assets/documents/minimum-points.pdf" target="_blank").card.card--link.card--file
+          p.text.text--link Минимальное количество баллов по результатам ЕГЭ и дополнительных вступительных испытаний в&nbsp;2020&nbsp;году, при получении которых кандидаты считаются успешно прошедшими вступительные испытания
+        a(href="./assets/documents/passing-score.pdf" target="_blank").card.card--link.card--file
+          p.text.text--link Проходной балл по результатам ЕГЭ и дополнительных вступительных испытаний в&nbsp;2019&nbsp;году
+        a(href="./assets/documents/appeal.pdf" target="_blank").card.card--link.card--file
+          p.text.text--link Порядок подачи и рассмотрения апелляций
+      .col-sm-6
+        a(href="./student-questions.html").card.card--link.card--link
+          p.text.text--link Часто задаваемые вопросы
+        a(href="./student-exams.html").card.card--link.card--link
+          p.text.text--link Направления подготовки и вступительные испытания
+    .line.text--mb
+    .row
+      #q5.col-sm-12
+        #accordion-ticket.panel-group
+          .panel
+            .panel-heading
+              h2.panel-title
+                a(data-toggle='collapse' data-parent='#accordion-ticket' href='#ticket') Структура экзаменационных билетов, критерии оценки
+            #ticket.panel-collapse.collapse.in
+              .panel-body
+                a.text(href="./assets/documents/tickets/history.pdf" target="_blank") &#8209; Экзамен по истории <br>
+                a.text(href="./assets/documents/tickets/biology.pdf" target="_blank") &#8209; Экзамен по биологии <br>
+                a.text(href="./assets/documents/tickets/social.pdf" target="_blank") &#8209; Экзамен по обществознанию <br>
+                a.text(href="./assets/documents/tickets/sport.pdf" target="_blank") &#8209; Экзамен по физической подготовке <br>
+                a.text(href="./assets/documents/tickets/rus.pdf" target="_blank") &#8209; Экзамен по русскому языку <br>
+                a.text(href="./assets/documents/tickets/maths.pdf" target="_blank") &#8209; Экзамен по математике <br>
+                a.text(href="./assets/documents/tickets/history-border.pdf" target="_blank") &#8209; Экзамен по истории России и пограничных органов <br>
+                a.text(href="./assets/documents/tickets/legal-border.pdf" target="_blank") &#8209; Экзамен по правовым основам пограничной деятельности <br>
+        

@@ -1,0 +1,19 @@
+.about__desc {
+  background-color: $yellow;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $yellow;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $yellow;
+  }
+}

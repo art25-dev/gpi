@@ -1,0 +1,44 @@
+.wrap-hero {
+  background: url("./assets/images/bg.jpg") center center / cover no-repeat;
+  min-height: 400px;
+  background-color: $white;
+
+  @include notebooks {
+    min-height: 350px;
+    background: url("./assets/images/bg.jpg") top center / cover no-repeat;
+  }
+
+  @include tablets {
+    min-height: 300px;
+    background: url("./assets/images/bg.jpg") top center / cover no-repeat;
+  }
+
+  @include phones {
+    min-height: 100px;
+    background: url("./assets/images/bg.jpg") top center / cover no-repeat;
+  }
+}
+
+.hero {
+  margin-top: 30px;
+
+  @include phones {
+    margin-top: 20px;
+  }
+}
+
+.hero__text {
+  float: left;
+  width: 60%;
+  clear: both;
+
+  @include tablets {
+    width: 55%;
+  }
+
+  @include phones {
+    width: 100%;
+    float: none;
+    display: block;
+  }
+}

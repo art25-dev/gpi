@@ -1,0 +1,9 @@
+.line {
+  height: 2px;
+  background-color: $yellow;
+  border: none;
+  
+  &--info {
+    margin-bottom: 20px;
+  }
+}

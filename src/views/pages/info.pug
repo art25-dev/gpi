@@ -1,0 +1,39 @@
+extends ../main.layout.pug
+
+block variables
+  - var title = 'Справочная информация'
+
+block content
+  .container
+    h1.title.title--page Справочная информация
+    .info.row
+      .col-sm-4
+        .card.card--img.card--last
+          img.card__img(src="./assets/images/info/info1.jpg" alt="img")
+          p.card__desc.card__desc--info Голицынский пограничный институт ФСБ&nbsp;России
+      .col-sm-8
+        p.text <b>Адрес:</b> Московская область, Одинцовский район, г.&nbsp;Голицыно, Можайское шоссе, д.&nbsp;75
+        p.text <b>Почтовый индекс:</b> 143040
+        p.text.text--justify Проезд на пригородных поездах: от Белорусского вокзала (метро&nbsp;Белорусская) до ст.&nbsp;Голицыно (все пригородные поезда, кроме пригородных поездов Усовского направления), далее выход в сторону здания вокзала, прямо по улице Советская до Пограничного проезда дом&nbsp;1 и налево один квартал.
+        p.text Для кандидатов на поступление из г.&nbsp;Москвы и Московской&nbsp;области:
+          a.text.text--link(href="tel:+74959142202") <b> (495)&nbsp;914&#8209;22&#8209;02</b>
+        p.text Контактный телефон приемной комиссии:
+          a.text.text--link(href="tel:+74959295599")  <b> (495)&nbsp;929&#8209;56&#8209;14</b>
+        p.text Контактный телефон отдела кадров:
+          a.text.text--link(href="tel:+74959295623") <b>(495)&nbsp;929&#8209;56&#8209;23</b>
+        p.text Контактный телефон дежурного по Институту:
+          a.text.text--link(href="tel:+74959295500") <b>(495)&nbsp;929&#8209;55&#8209;00</b>
+        p.text Адрес электронной почты:
+          a.text.text--link(href="mailto:gpi@fsb.ru") <b>gpi@fsb.ru</b>
+    .line.line--info
+    .info.row
+      .col-sm-4
+        .card.card--img
+          img.card__img(src="./assets/images/info/info2.jpg" alt="img")
+          p.card__desc.card__desc--info Филиал Голицынского пограничного института ФСБ&nbsp;России
+      .col-sm-8
+        p.text <b>Адрес:</b> г.&nbsp;Ставрополь, ул.&nbsp;Черниговская, д.&nbsp;100
+        p.text <b>Почтовый индекс:</b> 355024
+        p.text Контактный телефон отдела кадров:
+          a.text.text--link(href="tel:+78652224933") <b> (8652)&nbsp;22&#8209;49&#8209;33</b>,
+          a.text.text--link(href="tel:+78652224938") <b> (8652)&nbsp;22&#8209;49&#8209;38</b>

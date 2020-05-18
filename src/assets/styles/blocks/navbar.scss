@@ -1,0 +1,129 @@
+.navbar {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+}
+
+.navbar-brand {
+  display: none;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-text {
+  color: $white;
+  padding: 20px 20px;
+  transition: 0.3s;
+  padding-left: 0;
+}
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: $white;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  background-color: $blue;
+  color: $white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: $yellow;
+}
+
+.navbar-default {
+  background-color: $blue;
+  border: none;
+}
+
+.dropdown-menu {
+  box-shadow: 0 1px 2px rgb(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 0;
+}
+
+.dropdown-toggle {
+  color: $white;
+}
+
+.dropdown-menu > li > a {
+  padding: 5px 20px;
+  font-weight: bold;
+  color: $blue;
+  transition: 0.3s;
+}
+
+.dropdown-menu > li > a:hover {
+  color: $yellow;
+  background-color: $white;
+  background: none;
+}
+
+.navbar-default .navbar-toggle {
+  border: none;
+  margin-right: 0px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $white;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: $blue;
+  // margin-right: 5px;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #e7e7e7;
+  padding: 0;
+  margin-left: -15px;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav {
+    margin: 0;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: $white;
+  }
+
+  .navbar-brand {
+    display: block;
+    color: $white !important;
+    font-family: "PTSansNarrow";
+    font-weight: normal;
+    //margin-left: 10px;
+  }
+
+  .navbar-default .navbar-nav > li > a,
+  .navbar-default .navbar-text {
+    padding: 10px 15px;
+  }
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #e7e7e7;
+  padding: 0;
+}
+
+@media (min-width: 768px) and (max-width: 995px) {
+  .navbar-default .navbar-nav > li > a,
+  .navbar-default .navbar-text {
+    padding: 20px 10px 20px 0;
+  }
+}
+
+// @include tablets {
+//   .navbar-default .navbar-nav > li > a,
+//   .navbar-default .navbar-text {
+//     padding: 10px 15px;
+//   }
+// }

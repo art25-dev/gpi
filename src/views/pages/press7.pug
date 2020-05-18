@@ -1,0 +1,10 @@
+extends ../main.layout.pug
+
+block variables
+  - var title = 'В зеркале прессы'
+
+block content
+  .container
+    h1.title.title--page Интервью Начальника Института
+    video(controls poster="./assets/images/poster.jpg" preload="none")
+      source(src='./assets/video/press7.mp4' type='video/mp4')

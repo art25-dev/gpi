@@ -1,0 +1,27 @@
+// Адаптивка ноутбуков
+@mixin desktops {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+// Адаптивка планшетов
+@mixin notebooks {
+  @media screen and (max-width: 995px) {
+    @content;
+  }
+}
+
+// Адаптивка планшетов
+@mixin tablets {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+// Адаптивка смартфонов
+@mixin phones {
+  @media screen and (max-width: 450px) {
+    @content;
+  }
+}

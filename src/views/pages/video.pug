@@ -1,0 +1,10 @@
+extends ../main.layout.pug
+
+block variables
+  - var title = 'Видеоматериалы'
+
+block content
+  .container
+    h1.title.title--page Видеоматериалы
+    video(controls poster="./assets/images/poster.jpg" preload="none")
+      source(src='./assets/video/video.mp4' type='video/mp4')
