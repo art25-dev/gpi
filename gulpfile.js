@@ -86,6 +86,7 @@ gulp.task("server", () => {
     server: {
       baseDir: `${config.DIST_DIR}`
     },
+    browser: 'google chrome',
     open: true
   });
 });
