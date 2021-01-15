@@ -218,11 +218,11 @@ block content
             img.card__img( alt="img" src="./assets/images/history/heroes/" + hero.img)
             span.card__desc.card__desc--heroes= hero.status
             p.card__desc.card__desc--fio= hero.name
-          .modal.fade(tabindex='-1' role='dialog' aria-labelledby='myModalLabel' id= hero.id)
-            .modal-dialog(role='document')
-              .modal-content
-                .modal-header
-                  button.close(type='button' data-dismiss='modal' aria-label='Close')
-                    span(aria-hidden='true') &times;
-                  h4#myModalLabel.modal-title= hero.name
-                .modal-body= hero.bio  
+        .modal.fade(tabindex='-1' role='dialog' aria-labelledby='myModalLabel' id= hero.id)
+          .modal-dialog(role='document')
+            .modal-content
+              .modal-header
+                button.close(type='button' data-dismiss='modal' aria-label='Close')
+                  span(aria-hidden='true') &times;
+                h4#myModalLabel.modal-title= hero.name
+              .modal-body= hero.bio  
