@@ -8,6 +8,50 @@
   display: block;
   transition: 0.3s;
 
+  &--hero {
+    cursor: pointer;
+    // padding: 20px;
+    &:hover {
+      text-decoration: none;
+
+      @include tablets {
+        transform: none;
+      }
+    }
+
+    &:visited {
+      text-decoration: none !important;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 15px;
+      margin: 0px 10px 10px 0;
+      background: url("./assets/images/file.png") center center / contain
+        no-repeat;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    @include phones {
+      &::after {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 15px;
+        margin: 0px 12px 12px 0;
+        background: url("./assets/images/file.png") center center / contain
+          no-repeat;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+
   &--link {
     padding: 20px;
     &:hover {
@@ -166,6 +210,43 @@
   &--info {
     font-size: 14px;
     padding: 10px;
+  }
+
+  &--heroes {
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 10px 10px 0 10px;
+    font-weight: bold;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: $yellow;
+    }
+
+    @include tablets {
+      font-size: 11px;
+    }
+
+    @include phones {
+      font-size: 14px;
+    }
+  }
+
+  &--fio {
+    font-size: 14px;
+    padding: 5px 5px 10px 10px;
+
+    @include tablets {
+      font-size: 13px;
+    }
+
+    @include phones {
+      font-size: 16px;
+    }
   }
 }
 
